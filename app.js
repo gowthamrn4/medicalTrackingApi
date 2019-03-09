@@ -5,7 +5,7 @@ const path = require("path");
 let app = express();
 const jwt =require('jsonwebtoken');
 
-var db = mongoose.connect("mongodb://localhost:27017/medical_Tracking",{ useNewUrlParser: true });
+var db = mongoose.connect("mongodb://admin123:admin123@ds349175.mlab.com:49175/medicaltacking",{ useNewUrlParser: true });
 var config = require('./config');
 app.set('superSecret', config.secret);
 const mongodb = require('mongodb');
